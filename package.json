@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+  "proxy": "https://notekeeper-polejnik.onrender.com:4000/",
+>>>>>>> 5bdc94bc6ee2c3b0c14893d4bb77665be385a1f3
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
