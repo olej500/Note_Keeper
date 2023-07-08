@@ -12,10 +12,8 @@ function Home() {
         const fetchNotes = async() => {
             const response = await fetch("api");
             const json = await response.json();
-            
-            if(response.ok) {
-                setNotes(json);
-            }
+            setNotes(json);
+            console.log("useffect");
         }
             
         fetchNotes();
@@ -23,6 +21,7 @@ function Home() {
 
     function addNote(){
         const fetchNotes = async() => {
+            console.log("addNote");
             const response = await fetch("api");
             const json = await response.json();
             
@@ -42,8 +41,6 @@ function Home() {
 
         setNotes(prevNotes => {
             return prevNotes.filter((note) => {
-                console.log(note._id);
-                console.log(id);
                 return note._id !== id;
             });
         })

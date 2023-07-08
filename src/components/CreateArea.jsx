@@ -16,7 +16,6 @@ function CreateArea(props) {
     if (noteCreated.title !== "" && noteCreated.content !== "") {
 
       e.preventDefault();
-      props.onAdd(noteCreated);
       setNoteCreated({
         title: "",
         content: ""
@@ -29,15 +28,8 @@ function CreateArea(props) {
           "Content-Type": "application/json"
         }
       })
-      const json = await response.json();
-  
-      if(!response.ok) {
-        setError(json.error);
-      }
-      if(response.ok){
-        setError(null);
-        console.log("new note added", json);
-      }
+
+      props.onAdd(noteCreated);
     }
   }
 

@@ -21,7 +21,7 @@ const notes = [
     key: 4,
     title: "MongoDB",
     content:
-      "Data is being stored with MongoDB, a NoSQL data management system. It uses JSON-like docmuents as a storage method"
+      "Data is being stored with MongoDB, a NoSQL data management system. It uses JSON-like documents as a storage method"
   }
 ];
 
