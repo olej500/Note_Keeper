@@ -3,7 +3,7 @@ function Footer(){
 
     return(
         <footer>
-            <p>Copyright © Olej {year}</p>
+            
         </footer>
     );
 }
